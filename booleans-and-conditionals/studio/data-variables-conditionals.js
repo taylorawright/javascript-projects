@@ -34,20 +34,21 @@ if ((astronautCount <= 7) && (astronautStatus === "ready") &&
     (totalMassKg < maximumMassLimit) &&
     (fuelTempCelsius >= -300 || fuelTempCelsius <= -150) &&
     (fuelLevel === '100%') && (weatherStatus = 'clear')) {
-    console.log("All systems are a go! Initiating space shuttle launch sequence.");
-    console.log("---------------------------------------------------------------");
-    console.log("Date:", date);
-    console.log("Time:", time);
-    console.log("Astronaut Count:", astronautCount);
-    console.log("Crew Mass:", crewMassKg);
-    console.log("Fuel Mass:", fuelMassKg);
-    console.log("Shuttle Mass:", shuttleMassKg);
-    console.log("Total Mass:", totalMassKg);
-    console.log("Fuel Temperature:", fuelTempCelsius, "°C");
-    console.log("Weather Status:", weatherStatus);
-    console.log("--------------------------------------------------------------");
-    console.log("Have a safe trip astronauts!");
-
+    (preparedForLiftOff)
+}   if (preparedForLiftOff) {
+        console.log("All systems are a go! Initiating space shuttle launch sequence.");
+        console.log("---------------------------------------------------------------");
+        console.log("Date:", date);
+        console.log("Time:", time);
+        console.log("Astronaut Count:", astronautCount);
+        console.log("Crew Mass:", crewMassKg);
+        console.log("Fuel Mass:", fuelMassKg);
+        console.log("Shuttle Mass:", shuttleMassKg);
+        console.log("Total Mass:", totalMassKg);
+        console.log("Fuel Temperature:", fuelTempCelsius, "°C");
+        console.log("Weather Status:", weatherStatus);
+        console.log("--------------------------------------------------------------");
+        console.log("Have a safe trip astronauts!");
 } else {
     console.log("Unsafe conditions! Launch aborted.");
     }
